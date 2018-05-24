@@ -28,17 +28,19 @@ A simple way to do this to install the python 2.7 version of the [Anaconda pytho
 
 1. `slo_frames_simulated_idiosyncratic/`: A series of simulated motion-affected AO-SLO images, created using `create_simulated_images.py`, described below, and data in the `object/` and `simulated_eye_traces/` directories. In this series, idiosyncratic eye movements are added to the simulated eye movement traces.
 
+### Python scripts
+
+1. `demonstrate_registration.py`: This script performs strip-based registration of the real or simulated AO-SLO frames described above, as well as the intra-frame motion estimation and correction step described in Azimipour, 2018. This script demonstrates all of the key concepts described in Azimipour, 2018, and contains references to equations presented in the paper.
+
+1. `create_simulated_images.py`: The script used to generate the simulated AO-SLO images described above.
+
 ### Other data
 
 1. `object/`: A simulated retinal mosaic, generated as described in Azimipour, 2018.
 
 1. `simulated_eye_traces/`: Simulated eye traces for 200 AO-SLO frames acquired at 30 Hz,as described in Azimipour, 2018, following the self-avoiding walk model described in Engbert, 2011.
 
-1. `demonstrate_registration.py`: This script performs strip-based registration of the real or simulated AO-SLO frames described above, as well as the intra-frame motion estimation and correction step described in Azimipour, 2018. This script demonstrates all of the key concepts described in Azimipour, 2018, and contains references to equations presented in the paper.
-
 1. `tmp`: A temporary directory that stores intermediate data created by `demonstrate_registration.py`. To start the registration process from the beginning, delete this directory or files within it accordingly.
-
-1. `create_simulated_images.py`: The script used to generate the simulated AO-SLO images described above.
 
 1. `README.md`: This document.
 
